@@ -15,8 +15,8 @@ module.exports.start = (ms) => {
     module.exports.interval = setInterval(() => {
         readline.cursorTo(process.stdout, 0, 0);
         readline.clearScreenDown(process.stdout);
-        for(i=0;i<150;i++){
-                process.stdout.write(String.fromCharCode(memory[0x10+i]))
+        for(i=0;i<0x100;i++){
+                process.stdout.write(String.fromCharCode(memory[i]))
         }
         
     }, ms)

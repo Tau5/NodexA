@@ -1,5 +1,6 @@
 module.exports.start = () => {
     execute(require("fs").readFileSync("testfile"))
+    //process.exit()
 }
 
 var event = require("./event.js")
